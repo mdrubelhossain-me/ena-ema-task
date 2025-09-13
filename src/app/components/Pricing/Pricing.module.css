@@ -1,5 +1,197 @@
-.pricingContainer{
+.pricingContainer {
     padding-top: 120px;
     padding-bottom: 120px;
     background-color: var(--bg-dark);
+}
+
+.pricingContainer .headingSection {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pricingContainer .headingSection span {
+    font-size: var(--text-xl);
+    font-weight: var(--font-medium);
+    color: var(--color-primary);
+
+}
+
+.pricingContainer .headingSection .subHeading {
+    margin-top: 8px;
+    margin-bottom: 48px;
+}
+
+.cardWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(368px, 1fr));
+    gap: 48px
+}
+
+.cardWrapper .card {
+    padding: 36px;
+    border-radius: 16px;
+    background-color: var(--color-card);
+    border: 2px solid var(--color-card);
+}
+
+.cardWrapper .activeCard {
+    border: 2px solid var(--color-primary);
+}
+
+.cardWrapper .activeCard .cardTag {
+    margin-top: -50px;
+    margin-left: -16px;
+    margin-bottom: 24px;
+}
+
+.cardWrapper .activeCard .cardTag span {
+    padding: 6px 12px;
+    border: 2px solid var(--color-primary);
+    background-color: #151E1B;
+    color: var(--color-primary);
+    border-radius: 999px;
+
+}
+
+.cardWrapper .card .contentTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 43px;
+    border-bottom: 1px solid var(--color-stroke);
+}
+
+.cardWrapper .card .contentTop .planName {
+    font-size: 24px;
+    color: var(--text-light);
+    font-weight: var(--font-bold);
+    margin-bottom: 8px;
+}
+
+.cardWrapper .card .contentTop .price {
+    font-size: 24px;
+    color: var(--color-primary);
+    font-weight: var(--font-bold);
+}
+
+.cardWrapper .card .services {
+    padding-top: 46px;
+    padding-bottom: 46px;
+}
+
+.cardWrapper .card .services ul {
+    list-style-type: none;
+    margin: 0;
+
+}
+
+.cardWrapper .card .services ul li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    line-height: 30px;
+}
+
+
+
+.cardWrapper .card .ctaButton {
+    max-width: 296px;
+    margin: 0 auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: var(--text-md);
+    color: var(--color-primary-light);
+    font-weight: var(--font-medium);
+    padding: 16px 32px;
+    background-color: var(--foreground);
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    /* box-shadow:
+        0 9px 24px 0 #1FFFA540,
+        0 7px 8px 0 #FFFFFF40 inset; */
+}
+
+.cardWrapper .card .ctaButton:hover {
+    opacity: .8;
+}
+
+.cardWrapper .card .activeCtaButton {
+    background-color: var(--color-primary);
+    color: var(--text-dark);
+    box-shadow:
+        0 9px 24px 0 #1FFFA540,
+        0 7px 8px 0 #FFFFFF40 inset;
+}
+
+.cardWrapper .card .activeCtaButton:hover {
+    background-color: #17E8A3;
+    opacity: 1;
+}
+
+
+
+
+/*Responsive CSS*/
+@media (min-width: 1025px) and (max-width: 1191px) {
+
+    .pricingContainer .headingSection {
+        padding-right: 64px;
+        padding-left: 64px;
+    }
+
+    .cardWrapper {
+        padding-right: 64px;
+        padding-left: 64px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .pricingContainer {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .pricingContainer .headingSection {
+        max-width: 616px;
+        margin: 0 auto;
+    }
+
+    .cardWrapper {
+        padding-right: 64px;
+        padding-left: 64px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .pricingContainer {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        border-top: 3px solid var(--color-stroke);
+    }
+
+    .pricingContainer .headingSection {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .pricingContainer .headingSection .heading {
+        font-size: 36px;
+        text-wrap: wrap;
+    }
+
+    .pricingContainer .headingSection .heading span {
+        font-size: 36px;
+        text-wrap: wrap;
+    }
+
+    .cardWrapper {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
 }

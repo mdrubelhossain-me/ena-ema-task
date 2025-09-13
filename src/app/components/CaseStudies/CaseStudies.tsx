@@ -17,7 +17,7 @@ const CaseStudies = () => {
       <div className={style.allCards}>
         <CaseStudiesCards />
       </div>
-      {/* Submit Button */}
+      {/*  Button */}
       <Link href="/" className={style.ctaButton}>
         I want similar results
         <Image
