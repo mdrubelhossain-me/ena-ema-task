@@ -35,6 +35,7 @@ const CTAForm: React.FC = () => {
                 src={Envelope}
                 width={16}
                 height={16}
+                style={{ marginTop: "2px" }}
                 alt="Envelope Icon"
               />
             </span>
@@ -48,7 +49,13 @@ const CTAForm: React.FC = () => {
           {/* Phone Input */}
           <div className={styles.inputBox}>
             <span className={styles.inputIcon}>
-              <Image src={Phone} width={16} height={16} alt="Phone Icon" />
+              <Image
+                src={Phone}
+                width={16}
+                height={16}
+                style={{ marginTop: "2px" }}
+                alt="Phone Icon"
+              />
             </span>
             <input
               className={styles.inputField}
