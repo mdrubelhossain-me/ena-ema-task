@@ -27,6 +27,7 @@
 
 .content .trustedBy {
     max-width: 344px;
+    height: 34px;
     margin: -20px auto 0 auto;
     padding: 8px 16px;
     border-top: 1px solid var(--color-primary);
@@ -85,7 +86,7 @@
     .content .title {
         font-size: 36px;
         text-wrap: wrap;
-        line-height: 55px;
+        line-height: 50px;
     }
 
     .content .title span {

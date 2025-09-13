@@ -3,6 +3,7 @@ import styles from "./Hero.module.css";
 import Image from "next/image";
 import logo from "../../../../public/assets/images/Logo.svg";
 import Sparkle from "../../../../public/assets/images/Sparkle.svg";
+import CTAForm from "../CTAForm/CTAForm";
 
 const Hero: React.FC = () => {
   return (
@@ -29,6 +30,10 @@ const Hero: React.FC = () => {
           conversion-focused landing pages designed, developed, and launched in
           just 5 days.
         </h5>
+      </div>
+      {/* Call to Action Form */}
+      <div>
+        <CTAForm />
       </div>
     </section>
   );

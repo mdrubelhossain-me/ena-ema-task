@@ -1,0 +1,117 @@
+.ctaFormContainer {
+    background-color: #151E1B;
+    border: 1px solid var(--color-stroke);
+    border-radius: 8px;
+    padding: 36px;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0px 12px 32px 0px #1FFFA51A;
+
+}
+
+/* Input Row */
+.inputRow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(232px, 1fr));
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+/* Input Box */
+.inputRow .inputBox {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: 2px solid var(--color-stroke);
+    border-radius: 4px;
+    padding: 0 18px;
+    height: 54px;
+    transition: border 0.2s;
+}
+
+.inputBox:focus-within {
+    border-color: var(--color-primary);
+}
+
+.inputField::placeholder {
+    color: var(--text-secondary-light);
+    font-size: var(--text-xs);
+}
+
+.inputRow .inputBox .inputIcon {
+    margin-right: 8px;
+}
+
+.inputRow .inputBox .inputField {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: var(--text-light);
+    font-size: var(--text-xs);
+}
+
+/* CTA Button */
+.ctaFormContainer .ctaButton {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: var(--text-md);
+    color: var(--text-dark);
+    font-weight: var(--font-medium);
+    padding: 16px 32px;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 8px;
+    box-shadow:
+        0 9px 24px 0 #1FFFA540,
+        0 7px 8px 0 #FFFFFF40 inset;
+}
+
+.ctaFormContainer .ctaButton:hover {
+    background-color: #17E8A3;
+}
+
+.ctaGuarantees {
+    max-width: 523px;
+    margin: 16px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 131px;
+}
+
+.ctaGuarantees .guaranteeItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+/* Responsive */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .ctaFormContainer {
+        padding: 36px;
+    }
+
+    .inputRow {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .ctaFormContainer {
+        padding: 12px;
+    }
+
+    .ctaGuarantees {
+        flex-wrap: wrap;
+        row-gap: 8px;
+        margin-top: 32px;
+    }
+
+}
