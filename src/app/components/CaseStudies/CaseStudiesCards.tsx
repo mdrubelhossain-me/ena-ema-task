@@ -88,7 +88,7 @@ const CaseStudiesCards = () => {
                 display: "flex",
                 flexDirection: "column",
                 gap: "8px",
-                alignItems: "end",
+                alignItems: "flex-end",
                 justifyContent: "flex-end",
               }}
             >
