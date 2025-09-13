@@ -77,7 +77,7 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .heroContainer {
         padding-right: 16px;
         padding-left: 16px;
