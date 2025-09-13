@@ -23,11 +23,8 @@ const Templates: React.FC = () => {
   return (
     <section className={styles.templatesContainer}>
       <div className={styles.templatesWrapper}>
-        {templates.concat(templates).map((template) => (
-          <div
-            className={styles.templateImageContainer}
-            key={template.id + Math.random()}
-          >
+        {templates.map((template) => (
+          <div className={styles.templateImageContainer} key={template.id}>
             <Image
               src={template.image}
               alt={`Template Image ${template.id}`}

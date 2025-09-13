@@ -56,6 +56,11 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .whyTrustUsContainer {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
     .whyTrustUsContainer .headingContainer {
         max-width: 616px;
     }
@@ -73,6 +78,11 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+    .whyTrustUsContainer {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
     .whyTrustUsContainer .headingContainer {
         padding-right: 16px;
         padding-left: 16px;
