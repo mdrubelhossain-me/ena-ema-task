@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 :root {
   /* Colors */
   --bg-primary: #151f1c;
@@ -15,12 +16,12 @@
   --text-dark: #002013;
 
   /* Font sizes */
-  --font-xs: 12px;
-  --font-sm: 14px;
-  --font-md: 16px;
-  --font-lg: 18px;
-  --font-xl: 48px;
-  --font-xxl: 72px;
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 18px;
+  --text-xl: 48px;
+  --text-xxl: 72px;
 
   /* Font weights */
   --font-regular: 400;
@@ -29,6 +30,9 @@
 }
 
 
+
+
+/* Base styles */
 body {
   margin: 0;
   padding: 0;
@@ -43,4 +47,41 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font-manrope);
+}
+
+
+h1 {
+  font-size: var(--text-xxl);
+  font-weight: var(--font-bold);
+  color: var(--text-light);
+}
+
+h2 {
+  font-size: var(--text-xl);
+  font-weight: var(--font-medium);
+  color: var(--text-light);
+}
+
+h5 {
+  font-size: var(--text-lg);
+  font-weight: var(--font-regular);
+  color: var(--text-light);
+}
+
+h6 {
+  font-size: var(--text-md);
+  font-weight: var(--font-regular);
+  color: var(--text-light);
+}
+
+p {
+  font-size: var(--text-sm);
+  font-weight: var(--font-regular);
+  color: var(--text-secondary-light);
+}
+
+span {
+  font-size: var(--text-xs);
+  font-weight: var(--font-regular);
+  color: var(--text-secondary-light);
 }
