@@ -1,3 +1,4 @@
+import CaseStudies from "./components/CaseStudies/CaseStudies";
 import Hero from "./components/Hero/Hero";
 import Templates from "./components/Templates/Templates";
 import WhyTrustUs from "./components/WhyTrustUs/WhyTrustUs";
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Templates />
       <WhyTrustUs />
+      <CaseStudies />
     </div>
   );
 }
