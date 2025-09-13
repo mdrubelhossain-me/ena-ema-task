@@ -65,6 +65,15 @@
 
 .cardContainer .cardContent .checkList {
     display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.cardContainer .cardContent .checkListItem {
+    display: flex;
     align-items: center;
     gap: 8px;
     padding: 8px 16px;
@@ -106,4 +115,56 @@
 
 .caseStudiesContainer .ctaButton:hover {
     background-color: #17E8A3;
+}
+
+
+
+
+/* Responsive styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .caseStudiesContainer {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .caseStudiesContainer {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .caseStudiesContainer .headingSection .heading {
+        font-size: 36px;
+    }
+
+    .cardContainer {
+        padding-right: 16px;
+        padding-left: 16px;
+        flex-direction: column;
+        gap: 16px;
+        animation: none;
+    }
+
+    .cardContainer .card {
+        flex: 0 0 auto;
+
+    }
+
+    .cardContainer .card .cardImageContainer {
+        width: 300px;
+        height: 200px;
+    }
+
+    .cardContainer .cardContent {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .cardContainer .cardContent .checkList {
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 8px;
+
+    }
 }
