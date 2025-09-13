@@ -1,6 +1,4 @@
 .caseStudiesContainer {
-    max-width: 1440px;
-    margin: 0 auto;
     padding-top: 120px;
     padding-bottom: 120px;
     background-color: var(--bg-dark);
@@ -20,7 +18,14 @@
     margin-top: 8px;
 }
 
+.allCards {
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 .cardContainer {
+
     display: flex;
     width: auto;
     gap: 16px;

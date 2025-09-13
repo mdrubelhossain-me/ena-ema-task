@@ -14,7 +14,7 @@ const CaseStudies = () => {
           See the designs that delivered results
         </h6>
       </div>
-      <div>
+      <div className={style.allCards}>
         <CaseStudiesCards />
       </div>
       {/* Submit Button */}
