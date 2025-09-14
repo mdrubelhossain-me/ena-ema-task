@@ -277,11 +277,14 @@
     .cardWrapper {
         padding-right: 16px;
         padding-left: 16px;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
     .cardWrapper .card {
         padding: 24px;
+    }
+    .cardWrapper .activeCard .cardTag {
+        margin-top: -35px;
     }
 
     /*Pricing Offer*/
