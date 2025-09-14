@@ -1,4 +1,5 @@
 import CaseStudies from "./components/CaseStudies/CaseStudies";
+import Faq from "./components/Faq/Faq";
 import Hero from "./components/Hero/Hero";
 import LandingPage from "./components/LandingPage/LandingPage";
 import Pricing from "./components/Pricing/Pricing";
@@ -16,6 +17,7 @@ export default function Home() {
       <Pricing/>
       <LandingPage/>
       <Testimonial/>
+      <Faq/>
     </div>
   );
 }

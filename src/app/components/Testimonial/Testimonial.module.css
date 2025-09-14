@@ -2,7 +2,7 @@
     max-width: 1440px;
     margin: 0 auto;
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 96px;
     padding-left: 120px;
 }
 
@@ -95,7 +95,7 @@
 @media (min-width: 320px) and (max-width: 767px) {
     .testimonialContainer {
         padding-top: 64px;
-        padding-bottom: 84px;
+        padding-bottom: 82px;
         padding-left: 16px;
 
     }
