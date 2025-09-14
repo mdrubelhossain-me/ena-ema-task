@@ -5,12 +5,8 @@
 
 .whyTrustUsContainer .headingContainer {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 48px auto;
     text-align: center;
-}
-
-.whyTrustUsContainer .headingContainer {
-    margin-bottom: 48px;
 }
 
 .whyTrustUsContainer .headingContainer .title span {
@@ -88,10 +84,19 @@
         padding-left: 16px;
     }
 
+    .whyTrustUsContainer .headingContainer {
+        max-width: 361px;
+        margin: 0 auto 48px auto;
+    }
+
     .whyTrustUsContainer .headingContainer .title {
         font-size: 36px;
         line-height: 42px;
         margin-bottom: 8px;
+    }
+
+    .whyTrustUsContainer .headingContainer .title span {
+        font-size: 36px;
     }
 
     .trustCardsContainer {

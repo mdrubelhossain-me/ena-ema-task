@@ -58,4 +58,8 @@
     .faqContainer h2 {
         font-size: 36px;
     }
+
+    .faqContainer h2 span {
+        font-size: 36px;
+    }
 }

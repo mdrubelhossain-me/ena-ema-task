@@ -1,6 +1,7 @@
 .heroContainer {
     max-width: 1440px;
     margin: 0 auto;
+    padding-bottom: 131px;
 }
 
 .logoContainer {
@@ -64,6 +65,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
     .heroContainer {
         padding-right: 64px;
+        padding-bottom: 64px;
         padding-left: 64px;
     }
 
@@ -80,6 +82,7 @@
 @media (min-width: 320px) and (max-width: 767px) {
     .heroContainer {
         padding-right: 16px;
+        padding-bottom: 42px;
         padding-left: 16px;
     }
 

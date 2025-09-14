@@ -82,7 +82,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 131px;
+    /* padding-bottom: 131px; */
 }
 
 .ctaGuarantees .guaranteeItem {
@@ -102,10 +102,6 @@
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     }
 
-    .ctaGuarantees {
-        padding-bottom: 64px;
-    }
-
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -113,11 +109,15 @@
         padding: 12px;
     }
 
+    .ctaFormContainer .ctaButton {
+        font-size: var(--text-sm);
+
+    }
+
     .ctaGuarantees {
         flex-wrap: wrap;
         row-gap: 8px;
         margin-top: 32px;
-        padding-bottom: 42px;
     }
 
 }
