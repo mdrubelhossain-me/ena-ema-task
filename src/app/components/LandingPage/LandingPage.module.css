@@ -44,6 +44,15 @@
     background-color: var(--color-card);
     border-radius: 8px;
     padding: 0 36px;
+
+}
+
+.landingPageContainer .cardWrapper .card:nth-child(2) {
+    box-shadow: 12px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.landingPageContainer .cardWrapper .card:nth-last-child {
+    box-shadow: 12px 0 30px rgba(0, 0, 0, 0.1);
 }
 
 .landingPageContainer .cardWrapper .card .cardContent {
