@@ -1,0 +1,127 @@
+.landingPageContainer {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: url('../../../../public//assets/images/process.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+
+}
+
+.landingPageContainer .content {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.landingPageContainer .content h2 span {
+    font-size: var(--text-xl);
+    color: var(--color-primary);
+
+}
+
+.landingPageContainer .content h2 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.landingPageContainer .content h6 {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.landingPageContainer .cardWrapper {
+    max-width: 960px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(304px, 1fr));
+    justify-content: center;
+    gap: 24px;
+}
+
+.landingPageContainer .cardWrapper .card {
+    border: none;
+    background-color: var(--color-card);
+    border-radius: 8px;
+    padding: 0 36px;
+}
+
+.landingPageContainer .cardWrapper .card .cardContent {
+    margin-top: -10px;
+    text-align: center;
+}
+
+.landingPageContainer .cardWrapper .card .cardContent span {
+    color: var(--color-primary);
+    padding: 3px 8px;
+    border: 1px solid var(--color-primary);
+    background-color: #151E1B;
+    border-radius: 999px;
+}
+
+.landingPageContainer .cardWrapper .card .cardContent .icon {
+    margin: 30px 0 36px 0;
+}
+
+.landingPageContainer .cardWrapper .card .cardContent .cardTitle {
+    font-size: 20px;
+    color: var(--text-light);
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.landingPageContainer .cardWrapper .card .cardContent p {
+    text-align: center;
+    padding-bottom: 36px;
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .landingPageContainer .content {
+        padding: 64px;
+    }
+
+    .landingPageContainer .content h2 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .landingPageContainer .content h2 span {
+        font-size: 36px;
+    }
+
+    .landingPageContainer .cardWrapper {
+        grid-template-columns: repeat(auto-fit, minmax(304px, 1fr));
+        gap: 36px;
+        padding-right: 96px;
+        padding-left: 96px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .landingPageContainer .content {
+        padding: 64px 16px;
+    }
+
+    .landingPageContainer .content h2 {
+        font-size: 36px;
+        max-width: 361px;
+        margin: 0 auto;
+    }
+
+    .landingPageContainer .content h2 span {
+        font-size: 36px;
+    }
+
+    .landingPageContainer .content h6 {
+        max-width: 361px;
+        margin: 0 auto 48px auto;
+    }
+
+    .landingPageContainer .cardWrapper {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 36px;
+    }
+}
