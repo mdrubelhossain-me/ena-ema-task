@@ -1,0 +1,116 @@
+.testimonialContainer {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 120px;
+}
+
+.testimonialContainer .headingSection {
+    margin-bottom: 48px;
+}
+
+.testimonialContainer .headingSection h2 {
+    margin-bottom: 8px;
+}
+
+.testimonialContainer .headingSection h2 span {
+    color: var(--color-primary);
+    font-size: var(--text-xl);
+}
+
+
+
+/*Testimonial */
+.cardWrapper {
+    width: 100%;
+}
+
+.cardWrapper .card {
+    background: var(--color-card);
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 314px;
+    height: 262px;
+
+}
+
+.cardWrapper .card .ratting {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.cardWrapper .card .speech {
+    line-height: 24px;
+    margin-bottom: 36px;
+}
+
+.cardWrapper .card .client {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cardWrapper .card .client .avatar {
+    border-radius: 50%;
+}
+
+.cardWrapper .card .client .name {
+    margin: 0;
+}
+
+.cardWrapper .card .client .role {
+    margin: 0;
+}
+
+
+
+/*Responsive*/
+@media (min-width: 1192px) and (max-width: 1300px) {
+    .cardWrapper .card {
+        height: 300px;
+    }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1191px) {
+    .testimonialContainer {
+        padding-top: 64px;
+        padding-bottom: 84px;
+        padding-left: 64px;
+
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .testimonialContainer {
+        padding-top: 64px;
+        padding-bottom: 84px;
+        padding-left: 64px;
+
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .testimonialContainer {
+        padding-top: 64px;
+        padding-bottom: 84px;
+        padding-left: 16px;
+
+    }
+
+    .testimonialContainer .headingSection h2 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .testimonialContainer .headingSection h2 span {
+        font-size: 36px;
+    }
+
+    .cardWrapper .card {
+        max-width: 361px;
+    }
+
+}

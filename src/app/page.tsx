@@ -3,6 +3,7 @@ import Hero from "./components/Hero/Hero";
 import LandingPage from "./components/LandingPage/LandingPage";
 import Pricing from "./components/Pricing/Pricing";
 import Templates from "./components/Templates/Templates";
+import Testimonial from "./components/Testimonial/Testimonial";
 import WhyTrustUs from "./components/WhyTrustUs/WhyTrustUs";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <CaseStudies />
       <Pricing/>
       <LandingPage/>
+      <Testimonial/>
     </div>
   );
 }
