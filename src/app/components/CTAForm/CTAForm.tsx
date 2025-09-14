@@ -22,9 +22,13 @@ const CTAForm: React.FC = () => {
               <Image src={User} width={16} height={16} alt="User Icon" />
             </span>
             <input
+              id="name"
+              name="name"
               className={styles.inputField}
               type="text"
               placeholder="Your name"
+              autoComplete="name"
+              required
             />
           </div>
 
@@ -40,9 +44,13 @@ const CTAForm: React.FC = () => {
               />
             </span>
             <input
+              id="email"
+              name="email"
               className={styles.inputField}
               type="email"
               placeholder="Email Address"
+              autoComplete="email"
+              required
             />
           </div>
 
@@ -58,9 +66,12 @@ const CTAForm: React.FC = () => {
               />
             </span>
             <input
+              id="phone"
+              name="phone"
               className={styles.inputField}
               type="tel"
               placeholder="Phone Number"
+              autoComplete="tel"
             />
           </div>
         </div>
@@ -78,7 +89,7 @@ const CTAForm: React.FC = () => {
         </button>
       </form>
 
-      {/*  guarantees */}
+      {/* Guarantees */}
       <div className={styles.ctaGuarantees}>
         <div className={styles.guaranteeItem}>
           <Image src={Lock} width={16} height={16} alt="SSL secure" />
