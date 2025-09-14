@@ -76,7 +76,16 @@ const TestimonialCard = () => {
   ];
 
   // Calculate stars based on rating
-  const getStars = (rating: number) => (rating >= 4 ? 5 : rating >= 3 ? 4 : 3);
+  const getStars = (rating: number) => {
+    if (rating <= 1.5) return 1; // 1 → 1.5
+    if (rating <= 2) return 2; // 1.6 → 2
+    if (rating <= 2.5) return 2; // 2 → 2.5
+    if (rating <= 3) return 3; // 2.6 → 3
+    if (rating <= 3.5) return 3; // 3 → 3.5
+    if (rating <= 4) return 4; // 3.6 → 4
+    if (rating <= 4.5) return 4; // 4 → 4.5
+    return 5; // 4.6 → 5
+  };
 
   return (
     <div className={styles.cardWrapper}>
