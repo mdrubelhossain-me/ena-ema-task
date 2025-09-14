@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./Pricing.module.css";
 import PricingCard from "./PricingCard";
+import PricingOffer from "./PricingOffer";
 
 const Pricing = () => {
   return (
@@ -16,6 +17,9 @@ const Pricing = () => {
       </div>
       <div>
         <PricingCard />
+      </div>
+      <div>
+        <PricingOffer />
       </div>
     </section>
   );

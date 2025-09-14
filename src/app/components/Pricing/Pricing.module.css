@@ -136,6 +136,74 @@
 
 
 
+/*Pricing Offer*/
+.pricingOffer .offerHeading {
+    max-width: 1200px;
+    margin: 48px auto 48px auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.pricingOffer .offerHeading .title {
+    font-size: 24px;
+    color: var(--text-light);
+    font-weight: var(--font-bold);
+    margin-bottom: 8px;
+}
+
+.pricingOffer .offerContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-color: var(--color-card);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricingOffer .offerContainer .content h2 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.pricingOffer .offerContainer .content h6 {
+    text-align: center;
+}
+
+.pricingOffer .offerContainer .content .ctaButton {
+    max-width: 266px;
+    margin: 48px auto 0 auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: var(--text-md);
+    color: var(--text-dark);
+    font-weight: var(--font-medium);
+    padding: 16px 32px;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow:
+        0 9px 24px 0 #1FFFA540,
+        0 7px 8px 0 #FFFFFF40 inset;
+}
+
+.pricingOffer .offerContainer .content .ctaButton:hover {
+    background-color: #17E8A3;
+}
+
+
+
+
+
+
+
 
 /*Responsive CSS*/
 @media (min-width: 1025px) and (max-width: 1191px) {
@@ -146,6 +214,12 @@
     }
 
     .cardWrapper {
+        padding-right: 64px;
+        padding-left: 64px;
+    }
+
+    /*Pricing Offer*/
+    .pricingOffer {
         padding-right: 64px;
         padding-left: 64px;
     }
@@ -165,6 +239,16 @@
     .cardWrapper {
         padding-right: 64px;
         padding-left: 64px;
+    }
+
+    /*Pricing Offer*/
+    .pricingOffer {
+        padding-right: 64px;
+        padding-left: 64px;
+    }
+
+    .pricingOffer .offerContainer .content h2 {
+        font-size: 36px;
     }
 }
 
@@ -193,5 +277,29 @@
     .cardWrapper {
         padding-right: 16px;
         padding-left: 16px;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .cardWrapper .card {
+        padding: 24px;
+    }
+
+    /*Pricing Offer*/
+    .pricingOffer {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .pricingOffer .offerContainer {
+        padding: 24px;
+    }
+
+    .pricingOffer .offerContainer .content h2 {
+        font-size: 24px;
+        color: var(--color-primary);
+    }
+
+    .pricingOffer .offerContainer .content h6 {
+        font-size: 14px;
     }
 }
