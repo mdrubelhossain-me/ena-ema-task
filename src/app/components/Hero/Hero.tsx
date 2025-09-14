@@ -4,12 +4,15 @@ import Image from "next/image";
 import logo from "../../../../public/assets/images/Logo.svg";
 import Sparkle from "../../../../public/assets/images/Sparkle.svg";
 import CTAForm from "../CTAForm/CTAForm";
+import Link from "next/link";
 
 const Hero: React.FC = () => {
   return (
     <section className={styles.heroContainer}>
       <div className={styles.logoContainer}>
-        <Image src={logo} alt="Logo" className={styles.logo} />
+        <Link href="/">
+          <Image src={logo} alt="Logo" className={styles.logo} />
+        </Link>
       </div>
       <div className={styles.content}>
         <div className={styles.trustedBy}>

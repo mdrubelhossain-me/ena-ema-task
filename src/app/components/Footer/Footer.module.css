@@ -1,0 +1,141 @@
+.footerContent {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: var(--color-primary);
+    padding: 64px 120px;
+    display: grid;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    background-color: var(--color-primary);
+
+}
+
+.copryright {
+    text-align: center;
+}
+
+.copryright span {
+    color: var(--color-dark);
+}
+
+.soicalIcon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+
+
+/*Responsive CSS*/
+@media (min-width: 895px) and (max-width: 1191px) {
+    .footerContent {
+        padding: 64px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 894px) {
+    .footerContent {
+        padding: 64px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        align-items: start;
+    }
+
+    .copryright::after {
+        content: " | Developed by- Rubel";
+        font-size: 12px;
+        color: #30a375;
+    }
+
+    .soicalIcon {
+        justify-content: start;
+        gap: 8px;
+    }
+
+    .soicalIcon .icon {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (min-width: 680px) and (max-width: 767px) {
+    .footerContent {
+        padding: 16px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        align-items: flex-start;
+        row-gap: 6px;
+    }
+
+    .copryright {
+        text-align: end;
+    }
+
+
+    .soicalIcon {
+        gap: 8px;
+    }
+
+    .soicalIcon .icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .footerContent>div:last-child {
+        grid-column: -2 / -1;
+    }
+}
+
+@media (min-width: 530px) and (max-width: 679px) {
+    .footerContent {
+        padding: 16px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        align-items: flex-start;
+        row-gap: 6px;
+    }
+
+    .copryright {
+        text-align: end;
+    }
+
+    .soicalIcon {
+        gap: 8px;
+    }
+
+    .soicalIcon .icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .footerContent>div:last-child {
+        grid-column: -2 / -1;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 529px) {
+    .footerContent {
+        padding: 16px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        row-gap: 16px;
+    }
+
+    .copryright {
+        text-align: end;
+    }
+
+    .soicalIcon {
+        gap: 8px;
+    }
+
+    .soicalIcon .icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .footerContent>div:last-child {
+        grid-column: -2 / -1;
+    }
+}
