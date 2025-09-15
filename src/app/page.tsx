@@ -1,3 +1,9 @@
+"use client";
+
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import CaseStudies from "./components/CaseStudies/CaseStudies";
 import Faq from "./components/Faq/Faq";
 import Footer from "./components/Footer/Footer";
@@ -10,18 +16,27 @@ import Testimonial from "./components/Testimonial/Testimonial";
 import WhyTrustUs from "./components/WhyTrustUs/WhyTrustUs";
 
 export default function Home() {
+  // AOS initialization
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+      once: true,
+    });
+    AOS.refresh();
+  }, []);
+
   return (
     <div>
       <Hero />
       <Templates />
       <WhyTrustUs />
       <CaseStudies />
-      <Pricing/>
-      <LandingPage/>
-      <Testimonial/>
-      <Faq/>
-      <RealCustomers/>
-      <Footer/>
+      <Pricing />
+      <LandingPage />
+      <Testimonial />
+      <Faq />
+      <RealCustomers />
+      <Footer />
     </div>
   );
 }

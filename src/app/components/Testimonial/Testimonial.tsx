@@ -5,7 +5,7 @@ import TestimonialCard from "./TestimonialCard";
 const Testimonial = () => {
   return (
     <section className={styles.testimonialContainer}>
-      <div className={styles.headingSection}>
+      <div className={styles.headingSection} data-aos="fade-up">
         <h2>
           What Our Clients Are Saying <span>About Us</span>
         </h2>
@@ -13,7 +13,7 @@ const Testimonial = () => {
           Real feedback from real businesses who&apos;ve seen real results.
         </h6>
       </div>
-      <div>
+      <div data-aos="fade-up">
         <TestimonialCard />
       </div>
     </section>

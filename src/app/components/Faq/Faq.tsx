@@ -35,12 +35,12 @@ const Faq = () => {
 
   return (
     <section className={styles.faqContainer}>
-      <h2>
+      <h2 data-aos="fade-up">
         Got Questions<span>?</span> We&#39;ve Got The Answers
       </h2>
-      <div className={styles.faqItemContainer}>
+      <div className={styles.faqItemContainer} >
         {faqData.map((faq, index) => (
-          <div key={index} className={styles.faqItem}>
+          <div key={index} className={styles.faqItem} data-aos="fade-up" >
             <Image src={Ellipse} alt="Ellipse" width={12} height={12} />
             <h4>{faq.question}</h4>
             <h5 dangerouslySetInnerHTML={{ __html: faq.answer }} />

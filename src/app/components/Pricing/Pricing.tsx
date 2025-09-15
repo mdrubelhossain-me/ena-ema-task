@@ -6,7 +6,7 @@ import PricingOffer from "./PricingOffer";
 const Pricing = () => {
   return (
     <section className={style.pricingContainer}>
-      <div className={style.headingSection}>
+      <div className={style.headingSection} data-aos="fade-up">
         <h2 className={style.heading}>
           Simple, Transparent Pricing — <span>Choose Your Plan</span>
         </h2>
@@ -15,10 +15,10 @@ const Pricing = () => {
           prices.
         </h6>
       </div>
-      <div>
+      <div data-aos="fade-up">
         <PricingCard />
       </div>
-      <div>
+      <div data-aos="fade-up">
         <PricingOffer />
       </div>
     </section>

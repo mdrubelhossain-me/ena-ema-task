@@ -8,7 +8,7 @@ import Link from "next/link";
 const CaseStudies = () => {
   return (
     <section className={style.caseStudiesContainer}>
-      <div className={style.headingSection}>
+      <div className={style.headingSection} data-aos="fade-up">
         <h2 className={style.heading}>Case Studies</h2>
         <h6 className={style.subheading}>
           See the designs that delivered results

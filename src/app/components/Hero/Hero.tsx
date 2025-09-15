@@ -25,10 +25,10 @@ const Hero: React.FC = () => {
           />
           <span>Trusted by 30+ startups & entrepreneurs worldwide</span>
         </div>
-        <h1 className={styles.title}>
+        <h1 className={styles.title} data-aos="fade-up">
           Strategic Landing Pages That Convert From Just <span>$200</span>
         </h1>
-        <h5 className={styles.subtitle}>
+        <h5 className={styles.subtitle} data-aos="fade-up">
           Stop wasting traffic on generic pages. We deliver premium,
           conversion-focused landing pages designed, developed, and launched in
           just 5 days.

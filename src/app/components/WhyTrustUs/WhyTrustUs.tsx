@@ -5,7 +5,7 @@ import TrustCards from "./TrustCards";
 const WhyTrustUs = () => {
   return (
     <section className={style.whyTrustUsContainer}>
-      <div className={style.headingContainer}>
+      <div className={style.headingContainer} data-aos="fade-up">
         <h2 className={style.title}>
           Why Businesses <span>Trust Us</span> With Their Designs
         </h2>
@@ -15,7 +15,7 @@ const WhyTrustUs = () => {
         </p>
       </div>
       {/* Trust Cards */}
-      <div>
+      <div data-aos="fade-up">
         <TrustCards />
       </div>
     </section>

@@ -7,7 +7,7 @@ const RealCustomers = () => {
     <section className={styles.realCustomersContaier}>
       <div className="realCustomersContaier">
         <div className="rc-inner">
-          <div className={styles.heading}>
+          <div className={styles.heading} data-aos="fade-up">
             <h1>
               Ready to Turn Visitors Into <span>Real Customers?</span>
             </h1>
@@ -16,7 +16,7 @@ const RealCustomers = () => {
               conversion-focused landing page that pays for itself
             </h5>
           </div>
-          <div>
+          <div data-aos="fade-up">
             <CTAForm />
           </div>
         </div>
